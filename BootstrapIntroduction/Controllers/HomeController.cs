@@ -30,5 +30,15 @@ namespace BootstrapIntroduction.Controllers
         {
             return View();
         }
+        public ActionResult Advanced()
+        {
+            var person = new Models.Person
+            {
+                FirstName = "Eric",
+                LastName = "McQuiggan"
+            };
+
+            return View(person);
+        }
     }
 }
